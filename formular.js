@@ -35,7 +35,8 @@ function senden() {
     const kunde = new Kunde (anrede, name, geburtsdatum, mail, tel, vorlage, farbe, eigeneVorstellungen, sonstiges);
     alert(kunde.toString());
 
-
+    const kunde = new Kunde (anrede, name, geburtsdatum, mail, tel, vorlage, farbe, eigeneVorstellungen, sonstiges);
+    alert(kunde.toString());
     
     // Instantiating new EasyHTTP class 
     const http = new EasyHTTP; 
@@ -47,7 +48,7 @@ function senden() {
       } 
       
     // Update Post 
-    http.put('http://85.215.154.152:8080/submit', data) 
+    http.put('http://85.215.154.152:8080/submit', kund) 
     alert("kekw");
       
         
