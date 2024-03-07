@@ -58,7 +58,7 @@ function senden() {
     alert(kunde.toString());
   
     const http = new EasyHTTP;
-    http.put('http://85.215.154.152:8080/submit', kunde.toString()) 
+    http.put('http://85.215.154.152:8080/submit', "kekw") 
 }
 
 class Kunde{
