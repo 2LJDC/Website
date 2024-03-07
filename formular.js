@@ -67,8 +67,6 @@ function senden() {
     } 
   
     http.put('http://85.215.154.152:8080/submit', data) 
-      .then(data => console.log(data)) 
-      .catch(err => console.log(err));
 }
 
 class Kunde{
