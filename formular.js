@@ -48,6 +48,7 @@ function senden() {
       
     // Update Post 
     http.put('http://85.215.154.152:8080/submit', data) 
+    alert("kekw");
       
         
 }
