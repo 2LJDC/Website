@@ -250,32 +250,37 @@
             type="color"
             id="farbe"
             value="#0000ff"
+            disabled
           />
         </p>
 
         <p>
           <label for="idee" style="color: whitesmoke"
-            >eigene Vorstellungen:
+            >Eigene Vorstellungen:
           </label>
 
-          <input
+          <textarea
             name="idee"
             type="text"
             id="idee"
-            placeholder="eigene Vorstellungen"
+            placeholder="Eigene Vorstellungen..."
+            rows="10"
+            cols="80"
             required
-          />
+          ></textarea>
         </p>
 
         <p>
           <label for="sonstiges" style="color: whitesmoke">Sonstiges: </label>
 
-          <input
+          <textarea
             name="sonstiges"
             type="text"
             id="sonstiges"
-            placeholder="Sonstiges"
-          />
+            placeholder="Sonstiges..."
+            rows="10"
+            cols="80"
+          ></textarea>
         </p>
         <button><input type="submit" /></button>
         <button><input type="reset" /></button>
@@ -284,6 +289,12 @@
 
     <script>
       document.getElementById("anfrage").addEventListener("submit", senden);
+      document
+        .getElementById("eigeneFarbe")
+        .addEventListener("click", function () {
+          document.getElementById("farbe").disabled =
+            !document.getElementById("farbe").disabled;
+        });
     </script>
   </body>
 </html>
