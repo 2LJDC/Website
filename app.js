@@ -9,7 +9,7 @@ const data = {
   } 
   
 // Update Post 
-http.put('http://127.0.0.1:8080/submit', data) 
+http.put('http://85.215.154.152:8080/submit', data) 
   
 // Resolving promise for response data 
 .then(data => console.log(data)) 
