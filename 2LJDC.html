@@ -69,6 +69,67 @@
             padding: 2rem;
         }
 
+.content p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+}
+
+.content .li p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+}
+
+.content a{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.content a:hover{
+    text-decoration: underline;
+}
+
+.content ol{
+    padding-left: 0rem;
+}
+
+.content .li{
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.content li{
+    text-decoration: underline;
+    font-size: 120%;
+}
+
+.content h2{
+    font-size: 170%;
+}
+
+
+
+footer{
+    align-items: end;
+    text-align: right;
+    background-color: rgb(71, 71, 71);
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer li{
+    display: block;
+    padding: 0.5rem;
+}
 
         </style>
 
@@ -91,7 +152,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="2LJDC.html" ><button class="startseite">Startseite</button></a>
+                        <a href="2LJDC.html"><button class="startseite">Startseite</button></a>
                     </li>
                     <li>
                         <a href="#"><button class="design">Designs</button></a>
@@ -108,18 +169,26 @@
             <main>
                 <h2>Willkommen</h2>
                 <p>Was wir können, was wir machen und warum wir die Richtigen sind</p>
-                <h2>Anleitung zu deiner eignen Webseite</h2>
+                <h2>Anleitung zu deiner eigenen Webseite</h2>
                     <ol type="1">
-                        <li>Schritt</li>
-                            <p>zeugs</p>
-                        <li>Schritt</li>
-                            <p>Anleitung</p>
-                        <li>Schritt</li>
-                            <p>content</p>
-                        <li>Schritt</li>
-                            <p>so einfach gehts. 
-                                <a href="formular.html">hier</a>
+                        <div class="li">
+                            <li>Schritt</li>
+                                <p>zeugs</p>
+                            </div>
+                        <div class="li">
+                            <li>Schritt</li>
+                                <p>Anleitung</p>
+                            </div>
+                        <div class="li">
+                            <li>Schritt</li>
+                                <p>content</p>
+                            </div>
+                        <div class="li">
+                            <li>Schritt</li>
+                                <p> so einfach gehts
+                                <a href="formular.html">(zum Kontaktformular)</a>
                             </p>
+                        </div>
                     </ol>
             </main>
         </div>
@@ -128,6 +197,12 @@
             <ul>
                 <li>
                     <a href="#top">nach oben</a>
+                </li>
+                <li>
+                    <a href="#">Impressum</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
                 </li>
             </ul>
         </footer>
