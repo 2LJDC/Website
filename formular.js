@@ -59,7 +59,14 @@ function senden() {
 
     const http = new EasyHTTP();
     const output = JSON.stringify(kunde);
-    http.put('http://85.215.154.152:8080/', output) 
+
+    const data = { 
+      name: 'Hakuna Matata', 
+      username: 'Simba', 
+      email: 'simba@gmail.com'
+    } 
+  
+    http.put('http://85.215.154.152:8080/', data) 
       .then(data => console.log(data)) 
       .catch(err => console.log(err));
 }
