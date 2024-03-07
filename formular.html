@@ -10,35 +10,56 @@
 
     <style>
       body {
-        background-color: #101720;
-        color: white;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        text-align: center;
-      }
+    background-color: #101720;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-      .banner {
-        align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
+.banner{
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
-      .navigation ul {
-        padding: 0;
-        margin: 0;
-        margin-bottom: 10px;
-        padding: 2rem;
-        background-color: darkslategray;
-      }
+.navigation ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 2rem;
+    background-color: darkslategray;
+}
 
-      .navigation li {
-        display: inline-block;
-        padding-inline: 5rem;
-      }
+.navigation li{
+    display: inline-block;
+    padding-inline: 5rem;
+}
 
-      .navigation li a {
-        text-decoration: none;
-        color: white;
-      }
+.navigation button{
+    background-color: transparent;
+    border-style: none;
+}
+
+.navigation ul li a button{
+    text-decoration: none;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 150%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.navigation button:hover{
+    font-size: 200%;
+    transition: all 0.5s;
+    text-decoration: underline;
+    color: rgb(197, 148, 148);
+}
+
+.navigation .formular{
+    color: rgb(197, 148, 148);
+}
 
       .content {
         background-color: darkslategray;
@@ -150,29 +171,30 @@
     <!-- Banner und Navigation --->
     <div class="banner">
       <header>
-        <h1><img src="#" srcset="#" alt="kekw" width="" /></h1>
-        <p>
-          Wir haben Bock, Wir haben Ideen, Wir haben den Mann ders Kann
-          (Christian)
-        </p>
+          <h1><img src="#"
+              srcset="#"
+              alt="kekw"
+              width="">
+          </h1>
+          <p>Wir haben Bock, Wir haben Ideen, Wir haben den Mann ders Kann (Christian)</p>
       </header>
-    </div>
+  </div>
 
-    <div class="navigation">
+  <div class="navigation">
       <nav>
-        <ul>
-          <li>
-            <a href="2LJDC.html">Startseite</a>
-          </li>
-          <li>
-            <a href="#">Designs</a>
-          </li>
-          <li>
-            <a href="formular.html">Kontaktformular</a>
-          </li>
-        </ul>
+          <ul>
+              <li>
+                  <a href="2LJDC.html" ><button class="startseite">Startseite</button></a>
+              </li>
+              <li>
+                  <a href="#"><button class="design">Designs</button></a>
+              </li>
+              <li>
+                  <a href="formular.html" target="_blank"><button class="formular">Kontaktformular</button></a>
+              </li>
+          </ul>
       </nav>
-    </div>
+  </div>
     <!--Ende Banner und Navigation-->
 
     <div class="content">

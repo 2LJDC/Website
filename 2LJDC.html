@@ -37,9 +37,29 @@
     padding-inline: 5rem;
 }
 
-.navigation li a{
+.navigation button{
+    background-color: transparent;
+    border-style: none;
+}
+
+.navigation ul li a button{
     text-decoration: none;
     color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 150%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.navigation button:hover{
+    font-size: 200%;
+    transition: all 0.5s;
+    text-decoration: underline;
+    color: rgb(197, 148, 148);
+}
+
+.navigation .startseite{
+    color: rgb(197, 148, 148);
 }
 
 .content{
@@ -48,6 +68,8 @@
             margin-right: 20rem;
             padding: 2rem;
         }
+
+
         </style>
 
     </head>
@@ -69,17 +91,18 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="2LJDC.htm">Startseite</a>
+                        <a href="2LJDC.html" ><button class="startseite">Startseite</button></a>
                     </li>
                     <li>
-                        <a href="#">Designs</a>
+                        <a href="#"><button class="design">Designs</button></a>
                     </li>
                     <li>
-                        <a href="formular.html" target="_blank">Kontaktformular</a>
+                        <a href="formular.html" target="_blank"><button class="formular">Kontaktformular</button></a>
                     </li>
                 </ul>
             </nav>
         </div>
+
 
         <div class="content">
             <main>
@@ -95,7 +118,7 @@
                             <p>content</p>
                         <li>Schritt</li>
                             <p>so einfach gehts. 
-                                <a href="formular.html"></a>
+                                <a href="formular.html" target="_blank">hier</a>
                             </p>
                     </ol>
             </main>
