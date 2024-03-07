@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formular</title>
+    <script src="formular.js"></script>
+
+    <style>
+      body {
+        background-color: #101720;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+      }
+
+      .banner {
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .navigation ul {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 2rem;
+        background-color: darkslategray;
+      }
+
+      .navigation li {
+        display: inline-block;
+        padding-inline: 5rem;
+      }
+
+      .navigation li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .content {
+        background-color: darkslategray;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .content h1 {
+        display: block;
+        text-align: center;
+        font-family: OCR A Std, monospace;
+        text-decoration: underline;
+        font-size: 250%;
+        color: whitesmoke;
+      }
+
+      .content label {
+        display: block;
+        padding: 1rem;
+        font-family: OCR A Std, monospace;
+        font-size: 150%;
+        color: whitesmoke;
+      }
+
+      .content p input {
+        display: inline;
+        border-style: solid;
+        border-radius: 50px;
+        padding: 0.5rem;
+        font-family: OCR A Std, monospace;
+        font-size: 100%;
+        border-color: rgb(156, 155, 155);
+        border-width: 2.5px;
+        margin-bottom: 1.5rem;
+      }
+
+      .content p {
+        border-style: solid;
+        border-radius: 30px;
+        margin-top: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        justify-content: center;
+        background-color: rgba(169, 169, 169, 0.459);
+      }
+
+      button {
+        background-color: transparent;
+        border-style: hidden;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+
+      button input {
+        display: inline;
+        border-style: solid;
+        border-radius: 50px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        font-family: OCR A Std, monospace;
+        font-size: 150%;
+        border-color: black;
+        border-width: 2px;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        transition: all 1s;
+        background-color: rgb(197, 148, 148);
+      }
+
+      button input:hover {
+        font-size: 200%;
+        background-color: #101720a1;
+        transition: all 0.5s;
+        color: aquamarine;
+        border-width: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner und Navigation --->
+    <div class="banner">
+      <header>
+        <h1><img src="#" srcset="#" alt="kekw" width="" /></h1>
+        <p>
+          Wir haben Bock, Wir haben Ideen, Wir haben den Mann ders Kann
+          (Christian)
+        </p>
+      </header>
+    </div>
+
+    <div class="navigation">
+      <nav>
+        <ul>
+          <li>
+            <a href="2LJDC.htm">Startseite</a>
+          </li>
+          <li>
+            <a href="#">Designs</a>
+          </li>
+          <li>
+            <a href="formular.html">Kontaktformular</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--Ende Banner und Navigation-->
+
+    <div class="content">
+      <h1>Anfrage</h1>
+
+      <form id="anfrage">
+        <p>
+          <label for="anrede" style="color: whitesmoke">Anrede: </label>
+          <input
+            id="herr"
+            name="anrede"
+            type="radio"
+            value="Herr"
+            checked="checked"
+          />
+          Herr
+          <input id="frau" name="anrede" type="radio" value="Frau" />
+          Frau
+        </p>
+
+        <p>
+          <label for="name" style="color: whitesmoke">Name: </label>
+          <input
+            maxlength="40"
+            name="name"
+            type="text"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="birthdate" style="color: whitesmoke"
+            >Geburtsdatum:
+          </label>
+
+          <input
+            name="birthdate"
+            type="date"
+            id="birthdate"
+            placeholder="birthdate"
+            value="jjjj-mm-tt"
+            min="1920-01-01"
+            max="2024-01-01"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="email" style="color: whitesmoke">Email-adresse: </label>
+
+          <input
+            maxlength="60"
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Email-adresse"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="tel" style="color: whitesmoke">Telefonnummer: </label>
+
+          <input
+            maxlength="20"
+            name="tel"
+            type="text"
+            id="tel"
+            placeholder="Telefonnummer"
+          />
+        </p>
+
+        <p>
+          <label for="designvorlage" style="color: whitesmoke">Vorlage: </label>
+
+          <input
+            id="v1"
+            name="designvorlage"
+            type="radio"
+            value="Vorlage 1"
+            checked="checked"
+          />
+          Bild Vorlage 1
+          <input id="v2" name="designvorlage" type="radio" value="Vorlage 2" />
+          Bild Vorlage 2
+          <input id="v3" name="designvorlage" type="radio" value="Vorlage 3" />
+          Bild Vorlage 3
+        </p>
+
+        <p>
+          <label for="eigeneFarbe">Eigene Farbe wählen</label>
+          <input id="eigeneFarbe" type="checkbox" /> Ja
+
+          <input
+            maxlength="40"
+            name="farbe"
+            type="color"
+            id="farbe"
+            value="#0000ff"
+          />
+        </p>
+
+        <p>
+          <label for="idee" style="color: whitesmoke"
+            >eigene Vorstellungen:
+          </label>
+
+          <input
+            name="idee"
+            type="text"
+            id="idee"
+            placeholder="eigene Vorstellungen"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="sonstiges" style="color: whitesmoke">Sonstiges: </label>
+
+          <input
+            name="sonstiges"
+            type="text"
+            id="sonstiges"
+            placeholder="Sonstiges"
+          />
+        </p>
+        <button><input type="submit" /></button>
+        <button><input type="reset" /></button>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("anfrage").addEventListener("submit", senden);
+    </script>
+  </body>
+</html>
