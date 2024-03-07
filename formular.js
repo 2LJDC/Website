@@ -56,7 +56,8 @@ function senden() {
 
     const kunde = new Kunde (anrede, name, geburtsdatum, mail, tel, vorlage, farbe, eigeneVorstellungen, sonstiges);
     alert(kunde.toString());
-
+  
+    const http = new EasyHTTP;
     http.put('http://85.215.154.152:8080/', kunde) 
 }
 
