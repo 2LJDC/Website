@@ -16,25 +16,42 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.banner{
+.navigation{
+    display: block;
+    position: relative;
+    text-align: left;
     align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.navigation ul{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 2rem;
     background-color: darkslategray;
 }
 
-.navigation li{
+.navigation .bild{
+    
+    vertical-align: middle;
+    position: absolute;
+    top: 1.25rem;
+    margin-left: 5rem;
+}
+
+.navigation ul{
+    display: inline;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 1rem;
+    padding: 0rem;
+    background-color: transparent;
+}
+
+.navigation .nav{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.navigation ul li{
     display: inline-block;
-    padding-inline: 5rem;
+    padding: 2rem; 
 }
 
 .navigation button{
@@ -139,27 +156,30 @@ footer li{
 
         <div class="banner">
             <header>
-                <h1><img src="#"
-                    srcset="#"
-                    alt="kekw"
-                    width="">
-                </h1>
-                <p>Wir haben Bock, Wir haben Ideen, Wir haben den Mann ders Kann (Christian)</p>
+                
             </header>
         </div>
 
         <div class="navigation">
             <nav>
+                <div class="bild"><img src="graphics/Logo.png"
+                    srcset="graphics/Logo2x.png 2x"
+                    alt="kekw"
+                    width="150"></div>
+                
                 <ul>
-                    <li>
+                    
+                    <div class="nav">
+                        <li>
                         <a href="2LJDC.html"><button class="startseite">Startseite</button></a>
-                    </li>
-                    <li>
-                        <a href="#"><button class="design">Designs</button></a>
-                    </li>
-                    <li>
-                        <a href="formular.html"><button class="formular">Kontaktformular</button></a>
-                    </li>
+                        </li>
+                        <li>
+                            <a href="#"><button class="design">Designs</button></a>
+                        </li>
+                        <li>
+                            <a href="formular.html"><button class="formular">Kontaktformular</button></a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </div>
