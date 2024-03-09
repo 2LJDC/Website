@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="de" id="top">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Hier finden Sie unsere angebotenen Designs">
+        <meta name="viewpoint" content="width=device-width, inicial-scale=1.0">
+
+        <title>2LJDC-Desings</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="graphics/favicon.ico">
+
+        <style>
+
+            body {
+                background-color: #101720;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+.navigation{
+    display: block;
+    position: relative;
+    text-align: left;
+    align-items: center;
+    background-color: darkslategray;
+    margin-bottom: 1rem;
+}
+
+.navigation .bild{
+    
+    vertical-align: middle;
+    position: absolute;
+    top: 1.25rem;
+    margin-left: 5rem;
+}
+
+.navigation ul{
+    display: inline;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 1rem;
+    padding: 0rem;
+    background-color: transparent;
+}
+
+.navigation .nav{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.navigation ul li{
+    display: inline-block;
+    padding: 2rem;
+    padding-inline: 5rem; 
+}
+
+.navigation button{
+    background-color: transparent;
+    border-style: none;
+}
+
+.navigation ul li a button{
+    text-decoration: none;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 150%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.navigation button:hover{
+    font-size: 200%;
+    transition: all 0.5s;
+    text-decoration: underline;
+    color: rgb(197, 148, 148);
+}
+
+.navigation .design{
+    color: rgb(197, 148, 148);
+}
+
+/*Gestaltung Container*/
+main{
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+.container{
+    /*height: 1000px;*/
+    /*width: 900px;*/
+    /*Hintergrund(farbe)*/
+    background-color: darkslategray;
+
+    padding: 2rem;
+
+    /*Item-Anordnung*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #101720;
+    width: 400px;
+    height: 350px;
+    transition: all 0.5s;
+    margin-bottom: 4rem;
+    /*padding: 2rem;*/
+
+    /*border-Gestaltung*/
+    border-style: hidden;
+    border-radius: 30px;
+}
+
+.item1 a, .item2 a, .item3 a, .item4 a, .item5 a, .item6 a{
+    /*Gestaltung Items*/
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /*margin und padding*/
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.item1 h3, .item2 h3, .item3 h3, .item4 h3, .item5 h3, .item6 h3{
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: FreeMono, monospace;
+    font-size: 150%;
+}
+
+.container img{
+    width: 350px
+}
+
+/*hover für items*/
+
+.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover{
+    z-index: 1;
+    /*width: 800px;
+    height: 700px;*/
+    
+    transition: all 0.5s;
+    transform: scale(1.5);
+    filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
+    /*background-clip: content-box;
+    backdrop-filter: blur(5px);
+    background: transparent;*/
+}
+
+
+/*Gestaltung für den Footer*/
+footer{
+          align-items: end;
+          text-align: right;
+          background-color: rgb(71, 71, 71);
+          margin: 0;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          padding-right: 2rem;
+      }
+
+      footer a{
+          color: white;
+          text-decoration: none;
+      }
+
+      footer li{
+          display: inline;
+          padding: 0.5rem;
+      }
+
+
+     
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <header>
+
+        </header>
+
+        <div class="navigation">
+            <nav>
+                <div class="bild"><img src="graphics/Logo.png"
+                    srcset="graphics/Logo2x.png 2x"
+                    alt="kekw"
+                    width="150"></div>
+                
+                <ul>
+                    
+                    <div class="nav">
+                        <li>
+                        <a href="2LJDC.html"><button class="startseite">Startseite</button></a>
+                        </li>
+                        <li>
+                            <a href="design.html"><button class="design">Designs</button></a>
+                        </li>
+                        <li>
+                            <a href="formular.html"><button class="formular">Kontaktformular</button></a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+            <main>
+                <div class="container">
+                <div class="item1">
+                    <a href="#">
+                        <img src="graphics/Logo.png"
+                         
+                        alt="design1">
+                        
+                    </a>
+                    <h3>
+                        Design 1
+                    </h3>
+                </div>
+
+                <div class="item2">
+                    <a href="#">
+                        <img src="#"
+                        srcset="#" 
+                        alt="design2"
+                        width="">
+                    </a>
+                    <h3>
+                        Design 2
+                    </h3>
+                </div>
+
+                <div class="item3">
+                    <a href="#">
+                        <img src="#"
+                        srcset="#" 
+                        alt="design3"
+                        width="">
+                    </a>
+                    <h3>
+                        Design 3
+                    </h3>
+                </div>
+
+                <div class="item4">
+                    <a href="#">
+                        <img src="#"
+                        srcset="#" 
+                        alt="design4"
+                        width="">
+                    </a>
+                    <h3>
+                        Design 4
+                    </h3>
+                </div>
+
+                <div class="item5">
+                    <a href="#">
+                        <img src="#"
+                        srcset="#" 
+                        alt="design5"
+                        width="">
+                    </a>
+                    <h3>
+                        Design 5
+                    </h3>
+                </div>
+
+                <div class="item6">
+                    <a href="#">
+                        <img src="#"
+                        srcset="#" 
+                        alt="design6"
+                        width="">
+                    </a>
+                    <h3>
+                        Design 6
+                    </h3>
+                </div>
+
+            </div>
+            </main>
+
+            <footer>
+                <ul>
+                    <li>
+                        <a href="#top">nach oben</a>
+                    </li>
+                    <li>
+                        <a href="#">Impressum</a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Z-Vc8Fpyhs9VGIVt">Kontakt</a>
+                    </li>
+                </ul>
+            </footer>
+    </body>
+
+</html>
