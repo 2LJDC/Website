@@ -34,22 +34,24 @@ function senden() {
 
     const kunde = new Kunde (anrede, name, geburtsdatum, mail, tel, vorlage, farbe, eigeneVorstellungen, sonstiges);
     alert(kunde.toString());
-    
-    // Instantiating new EasyHTTP class 
-    const http = new EasyHTTP; 
-    // User Data 
-    const data = { 
-        name: 'Hakuna Matata', 
-        username: 'Simba', 
-        email: 'simba@gmail.com'
-      } 
 
     const output = JSON.stringify(kunde);    
     // Update Post 
-    http.put('http://85.215.154.152:8080/submit', output) 
+    const req = new XMLHttpRequest();
+    req.open("put", "http://85.215.154.152:8080/submit", true);
+    req.setRequestHeader("Conent-Type", "application/json");
+    req.onreadystatechange = auswerten;
+    req.send(output);
+    
     alert("kekw");
       
         
+}
+
+function auswerten(e) {
+    if (e.target.readyState == 4 && e.target.status == 200) {
+        alert("Formular wurde erfolgreich abgesendet!");
+    }
 }
 
 class Kunde{
