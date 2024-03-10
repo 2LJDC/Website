@@ -49,7 +49,7 @@ function senden() {
 }
 
 function auswerten(e) {
-    if (e.target.readyState == 4 && e.target.status == 200) {
+    if (e.target.readyState === "complete" && e.target.status == 200) {
         alert("Formular wurde erfolgreich abgesendet!");
     }
 }
