@@ -430,52 +430,50 @@
     </script>
 
     <script>
-      if (getCookie("erlaubt")) {
-        const names1 = [
-          "name",
-          "birthdate",
-          "email",
-          "tel",
-          "farbe",
-          "idee",
-          "sonstiges",
-        ];
-        const names2 = ["herr", "frau", "v1", "v2", "v3"];
-        for (let i = 0; i < names1.length; i++) {
-          document
-            .getElementById(names1[i])
-            .addEventListener("change", function () {
-              if (getCookie("erlaubt")) {
-                safe(this.id, this.value, 30);
-              }
-            });
-        }
-        for (let i = 0; i < names2.length; i++) {
-          document
-            .getElementById(names2[i])
-            .addEventListener("change", function () {
-              if (getCookie("erlaubt")) {
-                const rdb = document.querySelectorAll(
-                  "input[name=" + this.name + "]"
-                );
-                for (let i = 0; i < rdb.length; i++) {
-                  if (rdb[i].checked) {
-                    safe(rdb[i].id, true, 30);
-                  } else {
-                    safe(rdb[i].id, false, 30);
-                  }
-                }
-              }
-            });
-        }
+      const names1 = [
+        "name",
+        "birthdate",
+        "email",
+        "tel",
+        "farbe",
+        "idee",
+        "sonstiges",
+      ];
+      const names2 = ["herr", "frau", "v1", "v2", "v3"];
+      for (let i = 0; i < names1.length; i++) {
         document
-          .getElementById("eigeneFarbe")
+          .getElementById(names1[i])
           .addEventListener("change", function () {
-            if (getCookie("erlaubt")) {
-              safe(this.id, this.checked, 30);
+            if (getCookie("erlaubt" == "true")) {
+              safe(this.id, this.value, 30);
             }
           });
       }
+      for (let i = 0; i < names2.length; i++) {
+        document
+          .getElementById(names2[i])
+          .addEventListener("change", function () {
+            if (getCookie("erlaubt" == "true")) {
+              const rdb = document.querySelectorAll(
+                "input[name=" + this.name + "]"
+              );
+              for (let i = 0; i < rdb.length; i++) {
+                if (rdb[i].checked) {
+                  safe(rdb[i].id, true, 30);
+                } else {
+                  safe(rdb[i].id, false, 30);
+                }
+              }
+            }
+          });
+      }
+      document
+        .getElementById("eigeneFarbe")
+        .addEventListener("change", function () {
+          if (getCookie("erlaubt") == "true") {
+            safe(this.id, this.checked, 30);
+          }
+        });
     </script>
   </body>
 </html>

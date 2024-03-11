@@ -33,7 +33,6 @@ function senden() {
     const sonstiges = document.getElementById("sonstiges").value;
 
     const kunde = new Kunde (anrede, name, geburtsdatum, mail, tel, vorlage, farbe, eigeneVorstellungen, sonstiges);
-    alert(kunde.toString());
 
     const output = JSON.stringify(kunde);    
     // Update Post 
@@ -42,10 +41,6 @@ function senden() {
     req.setRequestHeader("Conent-Type", "application/json");
     req.onreadystatechange = auswerten;
     req.send(output);
-    
-    alert("kekw");
-      
-        
 }
 
 function auswerten(e) {
