@@ -445,21 +445,25 @@
           document
             .getElementById(names1[i])
             .addEventListener("change", function () {
-              safe(this.id, this.value, 30);
+              if (getCookie("erlaubt")) {
+                safe(this.id, this.value, 30);
+              }
             });
         }
         for (let i = 0; i < names2.length; i++) {
           document
             .getElementById(names2[i])
             .addEventListener("change", function () {
-              const rdb = document.querySelectorAll(
-                "input[name=" + this.name + "]"
-              );
-              for (let i = 0; i < rdb.length; i++) {
-                if (rdb[i].checked) {
-                  safe(rdb[i].id, true, 30);
-                } else {
-                  safe(rdb[i].id, false, 30);
+              if (getCookie("erlaubt")) {
+                const rdb = document.querySelectorAll(
+                  "input[name=" + this.name + "]"
+                );
+                for (let i = 0; i < rdb.length; i++) {
+                  if (rdb[i].checked) {
+                    safe(rdb[i].id, true, 30);
+                  } else {
+                    safe(rdb[i].id, false, 30);
+                  }
                 }
               }
             });
@@ -467,7 +471,9 @@
         document
           .getElementById("eigeneFarbe")
           .addEventListener("change", function () {
-            safe(this.id, this.checked, 30);
+            if (getCookie("erlaubt")) {
+              safe(this.id, this.checked, 30);
+            }
           });
       }
     </script>
