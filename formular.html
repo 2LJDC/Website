@@ -444,7 +444,7 @@
         document
           .getElementById(names1[i])
           .addEventListener("change", function () {
-            if (getCookie("erlaubt" == "true")) {
+            if (getCookie("erlaubt") === "true") {
               safe(this.id, this.value, 30);
             }
           });
@@ -453,7 +453,7 @@
         document
           .getElementById(names2[i])
           .addEventListener("change", function () {
-            if (getCookie("erlaubt" == "true")) {
+            if (getCookie("erlaubt") === "true") {
               const rdb = document.querySelectorAll(
                 "input[name=" + this.name + "]"
               );
@@ -470,7 +470,7 @@
       document
         .getElementById("eigeneFarbe")
         .addEventListener("change", function () {
-          if (getCookie("erlaubt") == "true") {
+          if (getCookie("erlaubt") === "true") {
             safe(this.id, this.checked, 30);
           }
         });
