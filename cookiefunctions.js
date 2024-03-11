@@ -1,3 +1,4 @@
+//Speichert den Cookie mit Namen, Wert und Ablaufdatum in Tagen
 function safe(n, v, e) { //name, value, expiration
     let date = new Date();
     date.setTime (date.getTime() + (e * 1000 * 60 * 60 * 24));
@@ -5,6 +6,7 @@ function safe(n, v, e) { //name, value, expiration
     document.cookie = n + "=" + v + "; " + expires + "; path=/";
   }
 
+//Prüft ob ein Cookie mit übergebenem Namen existiert
 function exists(n) {
     cName = new Array();
     cValue = new Array();
@@ -21,6 +23,7 @@ function exists(n) {
     return cName.includes(n);
 }
 
+//Liefert den value zum übergebenen Cookie
 function getCookie (n){
     cName = new Array();
     cValue = new Array();
@@ -35,6 +38,7 @@ function getCookie (n){
     return cValue[cName.indexOf(n)];
 }
   
+//Alle vorhandenen Cookies löschen
 function deleteAll (){
     cName = new Array();
     cValue = new Array();
@@ -47,6 +51,7 @@ function deleteAll (){
     }
 }
 
+//EInblenden und Ausblenden der Cookie Abfrage
 function cookieMessage (){
     if(exists("erlaubt")){
         document.getElementById("cookieMessage").style.display = "none";
@@ -56,6 +61,7 @@ function cookieMessage (){
     }
 }
 
+//Funktionalität der Buttons der Cookie Abfrage
 function cookieButton (b){
     document.getElementById("cookieMessage").style.display = "none";
     safe("erlaubt", b, 30);

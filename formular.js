@@ -35,7 +35,7 @@ function senden() {
     const kunde = new Kunde (anrede, name, geburtsdatum, mail, tel, vorlage, farbe, eigeneVorstellungen, sonstiges);
 
     const output = JSON.stringify(kunde);    
-    // Update Post 
+    //html put
     const req = new XMLHttpRequest();
     req.open("put", "http://85.215.154.152:8080/submit", true);
     req.setRequestHeader("Conent-Type", "application/json");

@@ -425,6 +425,7 @@
     </footer>
 
     <script>
+      //Funktionszuweisung der Buttons des Formulars
       document.getElementById("form").hidden =
         !document.getElementById("form").hidden;
       document.getElementById("anfrage").addEventListener("submit", senden);
@@ -432,6 +433,8 @@
         deleteAll();
         safe("erlaubt", true, 30);
       });
+
+      //Aktivieren/Deaktivieren der Farbauswahl in Abhängigkeit der Checkbox
       document
         .getElementById("eigeneFarbe")
         .addEventListener("click", function () {
@@ -441,11 +444,15 @@
     </script>
     <!--Cookies-->
 
+    <!--Zurücksetzen der Cookie Einstellungen-->
+
     <script>
       document
         .getElementById("resetCookies")
         .addEventListener("click", deleteAll);
     </script>
+
+    <!--Cookie Banner/Abfrage-->
 
     <div id="cookieMessage">
       <div id="c-container">
@@ -476,6 +483,8 @@
         });
     </script>
 
+    <!-- Wiederherstellung der Seite mittels gespeicherter Cookies-->
+
     <script>
       if (getCookie("erlaubt")) {
         for (let i = 0; i < cName.length; i++) {
@@ -495,6 +504,8 @@
         }
       }
     </script>
+
+    <!--Eventlistener zum Speichern der Cookies aus den input Elementen-->
 
     <script>
       const names1 = [
