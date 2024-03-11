@@ -57,7 +57,6 @@ function cookieMessage (){
 }
 
 function cookieButton (b){
-    alert(b);
     document.getElementById("cookieMessage").style.display = "none";
     safe("erlaubt", b, 30);
 }
