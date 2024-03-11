@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formular</title>
     <script src="formular.js"></script>
-    <script src="library.js"></script>
-    <script>
-      function safe(n, v) {
-        document.cookie = n + "=" + v;
-      }
-    </script>
+    <script src="cookiefunctions.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="graphics/favicon.ico" />
 
     <style>
@@ -20,75 +15,52 @@
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
 
-
-      /*Gestaltung Navigation mit Logo*/
-      .navigation{
-          display: block;
-          position: relative;
-          text-align: left;
-          align-items: center;
-          background-color: darkslategray;
-          margin-bottom: 1rem;
+      .banner {
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
 
-      .navigation .bild{
-    
-          vertical-align: middle;
-          position: absolute;
-          top: 1.25rem;
-          margin-left: 5rem;
+      .navigation ul {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 2rem;
+        background-color: darkslategray;
       }
 
-      .navigation ul{
-          display: inline;
-          text-align: center;
-          align-items: center;
-          padding: 0;
-          margin: 1rem;
-          padding: 0rem;
-          background-color: transparent;
+      .navigation li {
+        display: inline-block;
+        padding-inline: 5rem;
       }
 
-      .navigation .nav{
-    
-          display: flex;
-          text-align: center;
-          justify-content: center;
+      .navigation button {
+        background-color: transparent;
+        border-style: none;
       }
 
-      .navigation ul li{
-          display: inline-block;
-          padding: 2rem;
-          padding-inline: 5rem; 
+      .navigation ul li a button {
+        text-decoration: none;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 150%;
+        cursor: pointer;
+        transition: all 1s;
       }
 
-      .navigation button{
-          background-color: transparent;
-          border-style: none;
+      .navigation button:hover {
+        font-size: 200%;
+        transition: all 0.5s;
+        text-decoration: underline;
+        color: rgb(197, 148, 148);
       }
 
-      .navigation ul li a button{
-          text-decoration: none;
-          color: white;
-          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-          font-size: 150%;
-          cursor: pointer;
-          transition: all 1s;
+      .navigation .formular {
+        color: rgb(197, 148, 148);
       }
 
-      .navigation button:hover{
-          font-size: 200%;
-          transition: all 0.5s;
-          text-decoration: underline;
-          color: rgb(197, 148, 148);
-      }
-
-      .navigation .formular{
-          color: rgb(197, 148, 148);
-      }
-
-
-      /*Gestaltung sonstiger Eingabefelder*/
       .content {
         background-color: darkslategray;
         margin-left: 20rem;
@@ -137,8 +109,6 @@
         background-color: rgba(169, 169, 169, 0.459);
       }
 
-
-      /*Gestaltung Buttons*/
       button {
         background-color: transparent;
         border-style: hidden;
@@ -174,8 +144,6 @@
         border-width: 3px;
       }
 
-
-      /*Gestaltung lange Eingabefelder*/
       .content textarea {
         display: run-in;
         border-style: solid;
@@ -197,65 +165,43 @@
         margin-left: 5rem;
         margin-right: 5rem;
       }
-
-
-      /*Gestaltung für den Footer*/
-      footer{
-          align-items: end;
-          text-align: right;
-          background-color: rgb(71, 71, 71);
-          margin: 0;
-          padding-top: 0.5rem;
-          padding-bottom: 0.5rem;
-          padding-right: 2rem;
-      }
-
-      footer a{
-          color: white;
-          text-decoration: none;
-      }
-
-      footer li{
-          display: inline;
-          padding: 0.5rem;
-      }
     </style>
   </head>
   <body>
     <!-- Banner und Navigation --->
     <div class="banner">
       <header>
-          
+        <h1><img src="#" srcset="#" alt="kekw" width="" /></h1>
+        <p>
+          Wir haben Bock, Wir haben Ideen, Wir haben den Mann ders Kann
+          (Christian)
+        </p>
       </header>
-  </div>
+    </div>
 
-  <div class="navigation">
+    <div class="navigation">
       <nav>
-          <div class="bild"><img src="graphics/Logo.png"
-              srcset="graphics/Logo2x.png 2x"
-              alt="kekw"
-              width="150"></div>
-          
-          <ul>
-              
-              <div class="nav">
-                  <li>
-                  <a href="2LJDC.html"><button class="startseite">Startseite</button></a>
-                  </li>
-                  <li>
-                      <a href="design.html"><button class="design">Designs</button></a>
-                  </li>
-                  <li>
-                      <a href="formular.html"><button class="formular">Kontaktformular</button></a>
-                  </li>
-              </div>
-          </ul>
+        <ul>
+          <li>
+            <a href="2LJDC.html"
+              ><button class="startseite">Startseite</button></a
+            >
+          </li>
+          <li>
+            <a href="#"><button class="design">Designs</button></a>
+          </li>
+          <li>
+            <a href="formular.html"
+              ><button class="formular">Kontaktformular</button></a
+            >
+          </li>
+        </ul>
       </nav>
-  </div>
+    </div>
     <!--Ende Banner und Navigation-->
 
     <noscript>
-      Aktivieren Sie Javascript oder verwenden sie einen anderen Browser um
+      Aktivieren sie Javascript oder verwenden sie einen anderen Browser um
       diesen Teil zu nutzen
     </noscript>
 
@@ -415,32 +361,14 @@
         <button><input type="reset" /></button>
       </form>
     </div>
-    <footer>
-      <ul>
-          <li>
-              <a href="#top">nach oben</a>
-          </li>
-          <li>
-              <a href="#">Impressum</a>
-          </li>
-          <li>
-              <a href="https://youtu.be/dQw4w9WgXcQ?si=Z-Vc8Fpyhs9VGIVt">Kontakt</a>
-          </li>
-      </ul>
-  </footer>
 
     <script>
       document.getElementById("form").hidden =
         !document.getElementById("form").hidden;
       document.getElementById("anfrage").addEventListener("submit", senden);
       document.getElementById("anfrage").addEventListener("reset", function () {
-        const cookies = document.cookie.split(";");
-        for (let i = 0; i < cookies.length; i++) {
-          const cookie = cookies[i];
-          const eqPos = cookie.indexOf("=");
-          const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-          document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-        }
+        deleteAll();
+        safe("erlaubt", true, 30);
       });
       document
         .getElementById("eigeneFarbe")
@@ -449,12 +377,59 @@
             !document.getElementById("farbe").disabled;
         });
     </script>
-
     <!--Cookies-->
-    <script src="cookies.js"></script>
+
+    <div id="cookieMessage">
+      <div id="c-container">
+        <div id="c-subcontainer">
+          <div id="c-message">
+            <p>
+              Wir benutzen Cookies um die bestmögliche Leistung dieser Website
+              zu erreichen. <a href=""> Mehr Info.</a>
+            </p>
+            <button id="cookie-btn-true" class="cbtn">Akzeptieren</button>
+            <button id="cookie-btn-false" class="cbtn">Ablehnen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", cookieMessage);
+
+      document
+        .querySelector("#cookie-btn-true")
+        .addEventListener("click", function () {
+          cookieButton(true);
+        });
+      document
+        .querySelector("#cookie-btn-false")
+        .addEventListener("click", function () {
+          cookieButton(false);
+        });
+    </script>
 
     <script>
-      if (erlaubt) {
+      if (getCookie("erlaubt")) {
+        for (let i = 0; i < cName.length; i++) {
+          if (cName[i] != "erlaubt") {
+            if (cValue[i] == "true") {
+              document.getElementById(cName[i]).checked = true;
+            } else if (cValue[i] == "false") {
+              document.getElementById(cName[i]).checked = false;
+            } else {
+              document.getElementById(cName[i]).value = cValue[i];
+            }
+          }
+        }
+        if (document.getElementById("eigeneFarbe").checked) {
+          document.getElementById("farbe").disabled =
+            !document.getElementById("farbe").disabled;
+        }
+      }
+    </script>
+
+    <script>
+      if (getCookie("erlaubt")) {
         const names1 = [
           "name",
           "birthdate",
@@ -469,7 +444,7 @@
           document
             .getElementById(names1[i])
             .addEventListener("change", function () {
-              safe(this.id, this.value);
+              safe(this.id, this.value, 30);
             });
         }
         for (let i = 0; i < names2.length; i++) {
@@ -481,9 +456,9 @@
               );
               for (let i = 0; i < rdb.length; i++) {
                 if (rdb[i].checked) {
-                  safe(rdb[i].id, true);
+                  safe(rdb[i].id, true, 30);
                 } else {
-                  safe(rdb[i].id, false);
+                  safe(rdb[i].id, false, 30);
                 }
               }
             });
@@ -491,7 +466,7 @@
         document
           .getElementById("eigeneFarbe")
           .addEventListener("change", function () {
-            safe(this.id, this.checked);
+            safe(this.id, this.checked, 30);
           });
       }
     </script>
