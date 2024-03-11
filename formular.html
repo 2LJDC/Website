@@ -410,6 +410,9 @@
     <footer>
       <ul>
         <li>
+          <a href="" id="resetCookies">Cookies zurücksetzen</a>
+        </li>
+        <li>
           <a href="#top">nach oben</a>
         </li>
         <li>
@@ -437,6 +440,12 @@
         });
     </script>
     <!--Cookies-->
+
+    <script>
+      document
+        .getElementById("resetCookies")
+        .addEventListener("click", deleteAll);
+    </script>
 
     <div id="cookieMessage">
       <div id="c-container">

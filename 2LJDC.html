@@ -1,401 +1,371 @@
 <!DOCTYPE html>
 <html lang="de" id="top">
-    <head>
-        <meta name="description" content="Wählen Sie ein Design und WIR gestalten Ihre Webseite">
-        <meta charset="UTF8">
-        <meta name="viewpoint" content="width=device-width, inicial-scale=1.0">
+  <head>
+    <meta
+      name="description"
+      content="Wählen Sie ein Design und WIR gestalten Ihre Webseite"
+    />
+    <meta charset="UTF8" />
+    <meta name="viewpoint" content="width=device-width, inicial-scale=1.0" />
 
-        <link rel="shortcut icon" type="image/x-icon" href="graphics/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="graphics/favicon.ico" />
+    <script src="cookiefunctions.js"></script>
 
-        <title>2LJDC</title>
+    <title>2LJDC</title>
 
-        <style>
-            body {
-    background-color: #101720;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    <style>
+      body {
+        background-color: #101720;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
 
-html{
-    scroll-behavior: smooth;
-}
+      html {
+        scroll-behavior: smooth;
+      }
 
-/*Gestaltung Navigation mit Logo*/
-.navigation{
-    display: block;
-    position: relative;
-    text-align: left;
-    align-items: center;
-    background-color: darkslategray;
-    margin-bottom: 1rem;
-}
+      /*Gestaltung Navigation mit Logo*/
+      .navigation {
+        display: block;
+        position: relative;
+        text-align: left;
+        align-items: center;
+        background-color: darkslategray;
+        margin-bottom: 1rem;
+      }
 
-.navigation .bild{
-    vertical-align: middle;
-    position: absolute;
-    top: 1.25rem;
-    margin-left: 5rem;
-}
+      .navigation .bild {
+        vertical-align: middle;
+        position: absolute;
+        top: 1.25rem;
+        margin-left: 5rem;
+      }
 
-.navigation ul{
-    display: inline;
-    text-align: center;
-    align-items: center;
-    padding: 0;
-    margin: 1rem;
-    padding: 0rem;
-    background-color: transparent;
-}
+      .navigation ul {
+        display: inline;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        margin: 1rem;
+        padding: 0rem;
+        background-color: transparent;
+      }
 
-.navigation .nav{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
+      .navigation .nav {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
 
-.navigation ul li{
-    display: inline-block;
-    padding: 2rem;
-    padding-inline: 5rem; 
-}
+      .navigation ul li {
+        display: inline-block;
+        padding: 2rem;
+        padding-inline: 5rem;
+      }
 
-.navigation button{
-    background-color: transparent;
-    border-style: none;
-}
+      .navigation button {
+        background-color: transparent;
+        border-style: none;
+      }
 
-.navigation ul li a button{
-    text-decoration: none;
-    color: white;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 150%;
-    cursor: pointer;
-    transition: all 1s;
-}
+      .navigation ul li a button {
+        text-decoration: none;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 150%;
+        cursor: pointer;
+        transition: all 1s;
+      }
 
-.navigation button:hover{
-    font-size: 200%;
-    transition: all 0.5s;
-    text-decoration: underline;
-    color: rgb(197, 148, 148);
-}
+      .navigation button:hover {
+        font-size: 200%;
+        transition: all 0.5s;
+        text-decoration: underline;
+        color: rgb(197, 148, 148);
+      }
 
-.navigation .startseite{
-    color: rgb(197, 148, 148);
-}
+      .navigation .startseite {
+        color: rgb(197, 148, 148);
+      }
 
+      /*Gestaltung main*/
+      .content {
+        background-image: linear-gradient(darkslategray 80%, #101720);
+        margin-bottom: 1.5rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        padding: 2rem;
+        padding-bottom: 5rem;
+      }
 
-/*Gestaltung main*/
-.content{
-    background-image: linear-gradient(darkslategray 80%, #101720);
-    margin-bottom: 1.5rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    padding: 2rem;
-    padding-bottom: 5rem;
-}
+      .content p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.5rem;
+        margin-left: 0rem;
+      }
 
-.content p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0.5rem;
-    margin-left: 0rem;
-}
+      .content .li p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.5rem;
+        margin-left: 0rem;
+      }
 
-.content .li p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0.5rem;
-    margin-left: 0rem;
-}
+      .content a {
+        text-decoration: none;
+        color: darkgrey;
+      }
 
-.content a{
-    text-decoration: none;
-    color: darkgrey;
-}
+      .content a:hover {
+        text-decoration: underline;
+      }
 
-.content a:hover{
-    text-decoration: underline;
-}
+      .content ol {
+        padding-left: 0rem;
+      }
 
-.content ol{
-    padding-left: 0rem;
-}
+      .content .li {
+        margin-bottom: 2rem;
+        padding-left: 1.5rem;
+        text-align: left;
+      }
 
-.content .li{
-    margin-bottom: 2rem;
-    padding-left: 1.5rem;
-    text-align: left;
-}
+      .content li {
+        text-decoration: underline;
+        font-size: 120%;
+      }
 
-.content li{
-    text-decoration: underline;
-    font-size: 120%;
-}
+      .content h2 {
+        font-size: 170%;
+      }
 
-.content h2{
-    font-size: 170%;
-}
+      /*Gestaltung Preisliste*/
+      .preisliste {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
 
-/*Gestaltung Preisliste*/
-.preisliste{
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
+      .angebot {
+        background: linear-gradient(#0a0e14, #121a24, #233447, #192431);
+        color: black;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 1rem;
+        text-align: center;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+        flex-direction: column;
+      }
 
-.angebot{
-    background: linear-gradient(#0a0e14, #121a24, #233447, #192431);
-    color: black;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 1rem;
-    text-align: center;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: center;
-    flex-direction: column;
-}
+      .angebot h3 {
+        color: rgb(153, 236, 236);
+        font-size: 150%;
+      }
 
-.angebot h3{
-    color: rgb(153, 236, 236);
-    font-size: 150%;
-}
+      .angebot p {
+        color: white;
+      }
 
-.angebot p{
-    color: white;
-}
+      .inhalt ul {
+        text-align: left;
+        color: white;
+        margin-top: 2rem;
+        margin: 2rem;
+      }
 
-.inhalt ul{
-    text-align: left;
-    color: white;
-    margin-top: 2rem;
-    margin: 2rem
-}
+      .inhalt li {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        padding-top: 1rem;
+        list-style-image: url(graphics/check-mark-1292787_1280.png);
+      }
 
-.inhalt li{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 150%;
-    padding-top: 1rem;
-    list-style-image: url(graphics/check-mark-1292787_1280.png);
-    
-}
+      .pricepermonth {
+        font-size: 150%;
+      }
 
-.pricepermonth{
-    font-size: 150%;
-}
+      /*Gestaltung für den Footer*/
+      footer {
+        align-items: end;
+        text-align: right;
+        background-color: rgb(71, 71, 71);
+        margin: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 2rem;
+      }
 
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
 
-/*Gestaltung für den Footer*/
-footer{
-    align-items: end;
-    text-align: right;
-    background-color: rgb(71, 71, 71);
-    margin: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 2rem;
-}
+      footer li {
+        display: inline;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
 
-footer a{
-    color: white;
-    text-decoration: none;
-}
+  <body>
+    <div class="banner">
+      <header></header>
+    </div>
 
-footer li{
-    display: inline;
-    padding: 0.5rem;
-}
-
-        </style>
-
-    </head>
-
-    <body>
-
-        <div class="banner">
-            <header>
-                
-            </header>
+    <div class="navigation">
+      <nav>
+        <div class="bild">
+          <img
+            src="graphics/Logo.png"
+            srcset="graphics/Logo2x.png 2x"
+            alt="kekw"
+            width="150"
+          />
         </div>
 
-        <div class="navigation">
-            <nav>
-                <div class="bild"><img src="graphics/Logo.png"
-                    srcset="graphics/Logo2x.png 2x"
-                    alt="kekw"
-                    width="150"></div>
-                
+        <ul>
+          <div class="nav">
+            <li>
+              <a href="2LJDC.html"
+                ><button class="startseite">Startseite</button></a
+              >
+            </li>
+            <li>
+              <a href="design.html"><button class="design">Designs</button></a>
+            </li>
+            <li>
+              <a href="formular.html"
+                ><button class="formular">Kontaktformular</button></a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <div class="content">
+        <h2>Willkommen</h2>
+        <p>Was wir können, was wir machen und warum wir die Richtigen sind</p>
+        <h2>Anleitung zu deiner eigenen Webseite</h2>
+        <ol type="1">
+          <div class="li">
+            <li>Schritt</li>
+            <p>zeugs</p>
+          </div>
+          <div class="li">
+            <li>Schritt</li>
+            <p>Anleitung</p>
+          </div>
+          <div class="li">
+            <li>Schritt</li>
+            <p>content</p>
+          </div>
+          <div class="li">
+            <li>Schritt</li>
+            <p>
+              so einfach gehts
+              <a href="formular.html">(zum Kontaktformular)</a>
+            </p>
+          </div>
+        </ol>
+        <br />
+      </div>
+
+      <div class="preisliste">
+        <div class="angebot">
+          <div class="basic">
+            <h3>BASIC</h3>
+            <p class="pricepermonth">5,95€ pro Monat</p>
+            <p>Erstellung: 59,50€</p>
+            <div class="inhalt">
+              <article>
                 <ul>
-                    
-                    <div class="nav">
-                        <li>
-                        <a href="2LJDC.html"><button class="startseite">Startseite</button></a>
-                        </li>
-                        <li>
-                            <a href="design.html"><button class="design">Designs</button></a>
-                        </li>
-                        <li>
-                            <a href="formular.html"><button class="formular">Kontaktformular</button></a>
-                        </li>
-                    </div>
+                  <li>Persönliches Erstgespräch</li>
+                  <li>1 Feedbackschleife</li>
+                  <li>0,5 Stunden Pflege pro Monat</li>
+                  <li>Vorlage für Impressum & Datenschutz</li>
+                  <li>SSL-Verschlüsselung</li>
+                  <li>DSGVO-konforme Website-Struktur</li>
                 </ul>
-            </nav>
+              </article>
+            </div>
+          </div>
         </div>
 
+        <div class="angebot">
+          <div class="plus">
+            <h3>PLUS</h3>
+            <p class="pricepermonth">11,90€ pro Monat</p>
+            <p>Erstellung: 119€</p>
+            <div class="inhalt">
+              <article>
+                <ul>
+                  <li>Persönliches Erstgespräch</li>
+                  <li>1 Feedbackschleife</li>
+                  <li>1 Stunde Pflege pro Monat</li>
+                  <li>Vorlage für Impressum & Datenschutz</li>
+                  <li>SSL-Verschlüsselung</li>
+                  <li>DSGVO-konforme Website-Struktur</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
 
-        
-            <main>
-                <div class="content">
-                <h2>Willkommen</h2>
-                <p>Was wir können, was wir machen und warum wir die Richtigen sind</p>
-                <h2>Anleitung zu deiner eigenen Webseite</h2>
-                    <ol type="1">
-                        <div class="li">
-                            <li>Schritt</li>
-                                <p>zeugs</p>
-                            </div>
-                        <div class="li">
-                            <li>Schritt</li>
-                                <p>Anleitung</p>
-                            </div>
-                        <div class="li">
-                            <li>Schritt</li>
-                                <p>content</p>
-                            </div>
-                        <div class="li">
-                            <li>Schritt</li>
-                                <p> so einfach gehts
-                                <a href="formular.html">(zum Kontaktformular)</a>
-                            </p>
-                        </div>
-                    </ol> <br>
+        <div class="angebot">
+          <div class="pro">
+            <h3>PRO</h3>
+            <p class="pricepermonth">17,85€ pro Monat</p>
+            <p>Erstellung: 178,50</p>
+            <div class="inhalt">
+              <article>
+                <ul>
+                  <li>Persönliches Erstgespräch</li>
+                  <li>1 Feedbackschleife</li>
+                  <li>2 Stunden Pflege pro Monat</li>
+                  <li>Vorlage für Impressum & Datenschutz</li>
+                  <li>SSL-Verschlüsselung</li>
+                  <li>DSGVO-konforme Website-Struktur</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-                </div>
-
-
-                
-                <div class="preisliste">
-
-                    <div class="angebot">
-                        <div class="basic">
-                            <h3>BASIC</h3>
-                            <P class="pricepermonth">5,95€ pro Monat</P>
-                            <p>Erstellung: 59,50€</p>
-                            <div class="inhalt">
-                                <article>
-                                    <ul>
-                                        <li>
-                                            Persönliches Erstgespräch
-                                        </li>
-                                        <li>
-                                            1 Feedbackschleife
-                                        </li>
-                                        <li>
-                                            0,5 Stunden Pflege pro Monat
-                                        </li>
-                                        <li>
-                                            Vorlage für Impressum & Datenschutz
-                                        </li>
-                                        <li>
-                                            SSL-Verschlüsselung
-                                        </li>
-                                        <li>
-                                            DSGVO-konforme Website-Struktur
-                                        </li>
-                                    </ul>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="angebot">
-                        <div class="plus">
-                            <h3>PLUS</h3>
-                            <P class="pricepermonth">11,90€ pro Monat</P>
-                            <p>Erstellung: 119€</p>
-                            <div class="inhalt">
-                                <article>
-                                    <ul>
-                                        <li>
-                                            Persönliches Erstgespräch
-                                        </li>
-                                        <li>
-                                            1 Feedbackschleife
-                                        </li>
-                                        <li>
-                                            1 Stunde Pflege pro Monat
-                                        </li>
-                                        <li>
-                                            Vorlage für Impressum & Datenschutz
-                                        </li>
-                                        <li>
-                                            SSL-Verschlüsselung
-                                        </li>
-                                        <li>
-                                            DSGVO-konforme Website-Struktur
-                                        </li>
-                                    </ul>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="angebot">
-                        <div class="pro">
-                            <h3>PRO</h3>
-                            <P class="pricepermonth">17,85€ pro Monat</P>
-                            <p>Erstellung: 178,50</p>
-                            <div class="inhalt">
-                                <article>
-                                    <ul>
-                                        <li>
-                                            Persönliches Erstgespräch
-                                        </li>
-                                        <li>
-                                            1 Feedbackschleife
-                                        </li>
-                                        <li>
-                                            2 Stunden Pflege pro Monat
-                                        </li>
-                                        <li>
-                                            Vorlage für Impressum & Datenschutz
-                                        </li>
-                                        <li>
-                                            SSL-Verschlüsselung
-                                        </li>
-                                        <li>
-                                            DSGVO-konforme Website-Struktur
-                                        </li>
-                                    </ul>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            </main>
-
-        <footer>
-            <ul>
-                <li>
-                    <a href="#top">nach oben</a>
-                </li>
-                <li>
-                    <a href="impressum.html">Impressum</a>
-                </li>
-                <li>
-                    <a href="https://youtu.be/dQw4w9WgXcQ?si=Z-Vc8Fpyhs9VGIVt">Kontakt</a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+    <footer>
+      <ul>
+        <li>
+          <a href="" id="resetCookies">Cookies zurücksetzen</a>
+        </li>
+        <li>
+          <a href="#top">nach oben</a>
+        </li>
+        <li>
+          <a href="impressum.html">Impressum</a>
+        </li>
+        <li>
+          <a href="https://youtu.be/dQw4w9WgXcQ?si=Z-Vc8Fpyhs9VGIVt">Kontakt</a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      document
+        .getElementById("resetCookies")
+        .addEventListener("click", deleteAll);
+    </script>
+  </body>
 </html>
