@@ -5,10 +5,11 @@
       name="description"
       content="Wählen Sie ein Design und WIR gestalten Ihre Webseite"
     />
-    <meta charset="UTF8" />
+    <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, inicial-scale=1.0" />
 
     <link rel="shortcut icon" type="image/x-icon" href="graphics/favicon.ico" />
+    <link rel="stylesheet" href="stylenavfooter.css">
     <script src="cookiefunctions.js"></script>
 
     <title>2LJDC</title>
@@ -22,70 +23,6 @@
 
       html {
         scroll-behavior: smooth;
-      }
-
-      /*Gestaltung Navigation mit Logo*/
-      .navigation {
-        display: block;
-        position: relative;
-        text-align: left;
-        align-items: center;
-        background-color: darkslategray;
-        margin-bottom: 1rem;
-      }
-
-      .navigation .bild {
-        vertical-align: middle;
-        position: absolute;
-        top: 1.25rem;
-        margin-left: 5rem;
-      }
-
-      .navigation ul {
-        display: inline;
-        text-align: center;
-        align-items: center;
-        padding: 0;
-        margin: 1rem;
-        padding: 0rem;
-        background-color: transparent;
-      }
-
-      .navigation .nav {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-      }
-
-      .navigation ul li {
-        display: inline-block;
-        padding: 2rem;
-        padding-inline: 5rem;
-      }
-
-      .navigation button {
-        background-color: transparent;
-        border-style: none;
-      }
-
-      .navigation ul li a button {
-        text-decoration: none;
-        color: white;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 150%;
-        cursor: pointer;
-        transition: all 1s;
-      }
-
-      .navigation button:hover {
-        font-size: 200%;
-        transition: all 0.5s;
-        text-decoration: underline;
-        color: rgb(197, 148, 148);
-      }
-
-      .navigation .startseite {
-        color: rgb(197, 148, 148);
       }
 
       /*Gestaltung main*/
@@ -195,26 +132,6 @@
         font-size: 150%;
       }
 
-      /*Gestaltung für den Footer*/
-      footer {
-        align-items: end;
-        text-align: right;
-        background-color: rgb(71, 71, 71);
-        margin: 0;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-right: 2rem;
-      }
-
-      footer a {
-        color: white;
-        text-decoration: none;
-      }
-
-      footer li {
-        display: inline;
-        padding: 0.5rem;
-      }
     </style>
   </head>
 
@@ -238,7 +155,7 @@
           <div class="nav">
             <li>
               <a href="2LJDC.html"
-                ><button class="startseite">Startseite</button></a
+                ><button class="startseite active">Startseite</button></a
               >
             </li>
             <li>
