@@ -7,7 +7,7 @@
     <script src="formular.js"></script>
     <script src="cookiefunctions.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="graphics/favicon.ico" />
-    <link rel="stylesheet" href="stylenavfooter.css">
+    <link rel="stylesheet" href="stylenavfooter.css" />
     <link rel="stylesheet" href="style.css" />
 
     <style>
@@ -16,7 +16,6 @@
         color: white;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
-
 
       .content {
         background-color: darkslategray;
@@ -123,14 +122,13 @@
         margin-right: 5rem;
       }
 
-      .input img{
+      .input img {
         position: absolute;
         display: inline;
         width: 20px;
         transform: translateY(+50%);
         margin-left: 0.25rem;
       }
-
     </style>
   </head>
   <body>
@@ -328,7 +326,7 @@
             cols="80"
           ></textarea>
         </p>
-        <button><input type="submit" /></button>
+        <button disabled><input type="submit" /></button>
         <button><input type="reset" /></button>
       </form>
     </div>
@@ -357,7 +355,7 @@
       //Funktionszuweisung der Buttons des Formulars
       document.getElementById("form").hidden =
         !document.getElementById("form").hidden;
-      document.getElementById("anfrage").addEventListener("submit", senden);
+      //document.getElementById("anfrage").addEventListener("submit", senden);
       document.getElementById("anfrage").addEventListener("reset", function () {
         deleteAll();
         safe("erlaubt", true, 30);
